@@ -73,7 +73,12 @@ int main() {
 		
 		long int* f = pool.allocate(3);
 	}
-	
+	*/
+	{
+		Pool<long int, 7> pool;
+	}
+
+
 	// Testing pool.deallocate(b, 3) Case: ptr > head (head is changed) 
 	{
 		Pool<long int, 7> pool;
@@ -103,7 +108,7 @@ int main() {
 		long int* j = pool.construct(77);
 		std::cout << "Address of j: " << j << " Value of j: " << *j << std::endl;
 	}
-	*/
+	
 
 	// Testing pool.deallocate(b, 3) Case: ptr < head (head is changed) 
 	{

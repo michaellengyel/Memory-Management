@@ -6,7 +6,7 @@ public:
 
 	// FUNCTION: Contructor O(1)
 	Pool() {
-		T* block = new T[N];
+		block = new T[N];
 		begin = block;
 		head = block;
 		used = 0;
